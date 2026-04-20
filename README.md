@@ -1,2 +1,2 @@
-# WDD131
+# wdd131
 Repository for Dynamic Web Fundamentals Homework
