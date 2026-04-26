@@ -1,6 +1,50 @@
+#content {
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 50%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 body {
-    
+    text-align: center;
+    display: flex;
+  justify-content: center;
 }
 h2 {
+    /* Color is BYUI official, do not change */
+    color: rgb(0, 110, 182); 
     border-bottom: 1px solid darkgray;
+    font-size: 1em;
+    font-kerning: none;
+}
+
+#heading {
+    margin-left: 50px;
+    margin-right: 150px;
+    width: 90%; 
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+ol, p {
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 150px;
+    line-height: 1.5;
+}
+
+img {
+    height: 70px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
 }
