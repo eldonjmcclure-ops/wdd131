@@ -17,7 +17,10 @@ wrapper.style.backgroundColor = 'lightblue';
 
 let list = document.querySelector('.list')
 
-list.style.border = "3px solid black";
+list.style.border = '3px solid black';
 
 let para = document.querySelector('p');
+
 para.style.fontSize = '2em';
+
+para.classList.add('background')
