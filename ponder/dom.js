@@ -31,7 +31,6 @@ const css = document.querySelector('#css')
 const js = document.querySelector('#js')
 
 dropdown.addEventListener('change', function(){
-    document.getElementById(codeValue).style.color = "purple";
     let codeValue = dropdown.value;
     console.log(codeValue);
     document.getElementById(codeValue).style.color = 'red'
