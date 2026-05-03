@@ -1,9 +1,12 @@
 #content {
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 50px;
     max-width: 50%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: -50px;
+    border: 1px solid darkgray;
 }
 body {
     text-align: center;
@@ -37,8 +40,8 @@ h1, h2 {
 
 ol, p {
     text-align: left;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
     line-height: 1.5;
 }
 
