@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
+  margin: 0px;
+  padding: 0px;
   font-family: Roboto, sans-serif;
 }
 header,
@@ -61,5 +63,10 @@ footer {
     nav {
         text-align: right;
     }
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 }
           
