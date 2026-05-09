@@ -32,6 +32,9 @@ const js = document.querySelector('#js')
 
 dropdown.addEventListener('change', function(){
     let codeValue = dropdown.value;
+    
+    
+    
     console.log(codeValue);
     document.getElementById(codeValue).style.color = 'red'
 });
