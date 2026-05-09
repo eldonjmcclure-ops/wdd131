@@ -1,13 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
     background-color: rgb(138, 138, 138);
     margin: 0px;
     padding: 0px;
-
+    font-family: Roboto, sans-serif;
+    font-size: 1em;
 }
 header {
   max-width: 100%;
   padding: 1rem;
   background-color: rgb(44, 93, 156);
+}
+
+h1 {
+    color: rgb(185, 185, 185)
 }
 
 header, h2, footer {
@@ -46,8 +53,8 @@ footer {
 
 
 img {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
   border: 5px solid white;
 }
@@ -61,7 +68,10 @@ img {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
+    img {
+        width: 300px;
+        height: 300px;
+    }
     nav a {
         margin: 10px;
         font-size: 2em;
@@ -79,8 +89,6 @@ img {
   #images {
     grid-template-columns: repeat(3, 1fr);
   }
-  .menu-btn {
-
-  }
+  
 }
 }
