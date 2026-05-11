@@ -27,6 +27,8 @@ nav, nav a {
 .menu-btn {
     width: 100px;
     height: 20px;
+    border: none;
+    background-color: transparent;
 }
 
 main {
@@ -48,6 +50,7 @@ img {
   height: 500px;
   object-fit: cover;
   border: 5px solid white;
+  box-shadow: 5px 5px 5px;
 }
 
 footer {
