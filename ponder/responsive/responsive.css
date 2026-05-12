@@ -49,7 +49,7 @@ nav a:hover {
     height: 4px;
     background-color: black;
     margin: 5px 0;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .change .bar1 {
@@ -76,8 +76,7 @@ footer {
     }
     nav a {
         display: inline;
-        border: none;
-        text-align: center;
+        border-top: none;
     }
     nav {
         text-align: right;
