@@ -119,6 +119,10 @@ dialog img {
         text-align: center;
     } 
 
+    .hide {
+        display: inline
+    }
+
     .menu-btn {
         display: none;   
     }
