@@ -12,7 +12,15 @@ header {
   background-color: rgb(44, 93, 156);
 }
 
-h1 {
+.menu-text {
+    font-size: 1.5em;
+}
+
+.hide {
+        display: none;
+}
+
+h1, .menu-text {
     color: rgb(185, 185, 185)
 }
 
@@ -21,14 +29,20 @@ header, h2, footer {
 }
 
 nav, nav a {
-    display: none
+    display: block;
+    color: rgb(185, 185, 185);
+    font-size: 1.15em;
 }
-
+nav a {
+    margin-bottom: 10px;
+}
 .menu-btn {
     width: 100px;
-    height: 20px;
+    height: 50px;
     border: none;
     background-color: transparent;
+    color: rgb(185, 185, 185);
+    font-size: 1.7em;
 }
 
 main {
@@ -58,6 +72,28 @@ footer {
     height: 50px;
     background-color: rgb(44, 93, 156);
     padding: 10px;
+}
+
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+    height: 40px;
+    width: 40px;
+}
+
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
 }
 /* Media Query */
 
@@ -90,6 +126,22 @@ footer {
   #images {
     grid-template-columns: repeat(3, 1fr);
   }
+  dialog img {
+        width: 60%;
+        height: auto;
+        margin: 15vh auto;
+    }
+  .close-viewer {
+        position: absolute;
+        right: 15vh;
+    }
+  .viewer {
+        margin: 50px;
+        padding: 50px;
+    }
+  .viewer img {
+        max-width: 800px;
+    }
   
 }
 }
