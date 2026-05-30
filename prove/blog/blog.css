@@ -31,34 +31,31 @@ h1 {
     height: 50px;
     border-bottom: 2.5px solid orange;
     margin: 0px 10px 0px 10px;
+    
 }
 
-#book-details {
-    text-align: right;
-    margin-right: 40px;
-    font-size: 1.2em;
-}
 h2 {
     color: red;
     font-size: 2em;
     margin-left: 30px;
-}
-
-#book-main {
-    text-align: left;
-    width: 70%;
-}
-
-#book-content {
     text-align: center;
-
 }
 
-#book-content p {
-    font-size: 1.5em;
-    text-align: left;
-    margin-left: 30px;
-    margin-right: auto;
+.book {
+    padding: 1rem;
+    max-width: 700px;
+    margin: 20px auto;
+}
+.book img {
+    width: 300px;
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+#desc {
+    border-bottom: 2.5px solid orange;
+    padding-bottom: 20px;
 }
 
 footer {
@@ -67,31 +64,39 @@ footer {
     font-size: 1.5em;
 }
 
-@media (min-width: 800px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 70%;
-    }
 
-    #book-details {
-        grid-column: 1/2;
-        margin-top: 30px;
-    }
+@media (min-width: 800px) {
 
     #blank {
         display: none;
     }
 
-    #book-main {
-        border-left: 2.5px solid orange;
-        margin: 20px 0px 20px 0px;
-        width: 120%;
-
-    }
-    h2, #book-main p {
+    h2 {
         text-align: left;
-        margin-left: 30px;
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .book {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        max-width: 6000px;
+    } 
+    .book img {
+        grid-row: 2/6;
+        grid-column: 2/3;
+    }
+    #book-details {
+        border-right: 2.5px solid orange;
+        border-bottom: none;
+        grid-row: 1/7;
+        text-align: right;
+        padding: 10px;
     }
 
+    #desc {
+        grid-column: 2/3;
+        border: none;
+        margin-left: 20px
+    }
 }
