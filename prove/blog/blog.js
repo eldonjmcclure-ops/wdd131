@@ -52,10 +52,10 @@ books.forEach(book => {
         <h2>${book.title}</h2>
             <img src=${book.imgSrc} alt="${book.imgAlt}">
         <div id="book-details">
-            <p class="detail"><strong>Release Date:</strong> ${book.date}</p>
-            <p class="detail"><strong>Recommended Ages:</strong> ${book.ages}</p>
-            <p class="detail"><strong>Genre:</strong> ${book.genre}</p>
-            <p class="detail"><strong>Rating:</strong> <span aria-label="${book.stars.length} out of 5 stars" role="img">${book.stars}</span></p>
+            <p class="detail"> ${book.date}</p>
+            <p class="detail"> ${book.ages}</p>
+            <p class="detail"> ${book.genre}</p>
+            <p class="detail"> <span aria-label="${book.stars.length} out of 5 stars" role="img">${book.stars}</span></p>
         </div>
         <p id='desc'>${book.description}</p>
             `
