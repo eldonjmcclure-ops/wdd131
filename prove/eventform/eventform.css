@@ -45,7 +45,7 @@ button:hover {
   background: rgb(172, 227, 255);
 }
 
-#studentIDContainer[hidden] {
+#userIDContainer[hidden] {
   display: none;
 }
 
@@ -53,4 +53,3 @@ button:hover {
   margin-top: 1rem;
   font-weight: bold;
 }
-          

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="eventform.css" />
+    <link rel="icon" href="eventform_logo.png">
     <script src="eventform.js" defer></script>
     <title>Event Signup</title>
 </head>
@@ -32,7 +33,7 @@
                 <select
                 id="type"
                 name="type"
-                aria-controls="notesContainer"
+                aria-controls="loginTypeContainer"
                 required
                 >
                 <option value="">Choose one</option>
@@ -44,9 +45,9 @@
                 <label for="eventDate">Event Date</label>
                 <input id="eventDate" name="eventDate" type="date" required />
             </div>
-            <div id="studentIDContainer" class="field full">
-                <label for="studentID">Student I#</label>
-                <input id="studentID" name="studentID" type="text" required>
+            <div id="userIDContainer" class="field full">
+                <label for="userID">Student I#</label>
+                <input id="userID" name="userID" type="text" required>
             </div>
             <button class="full" type="submit">Create Ticket</button>
         </form>
