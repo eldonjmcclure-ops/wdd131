@@ -3,13 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="form.css" />
-    <script src="form.js" defer></script>
-    <title>Event Form</title>
+    <link rel="stylesheet" href="eventform.css" />
+    <script src="eventform.js" defer></script>
+    <title>Event Signup</title>
 </head>
 <body>
     <main class="wrapper">
-        <!-- Use Pattern and Title on required fields to give requirements that submissions have to follow -->
+        <h1>Event Ticket</h1>
+
+        <form id="eventForm">
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" required />
+            </div>
+
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" required />
+            </div>
+
+            <div class="field full">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="field">
+                <label for="type">Type</label>
+                <select
+                id="type"
+                name="type"
+                aria-controls="notesContainer"
+                required
+                >
+                <option value="">Choose one</option>
+                <option value="student">Student</option>
+                <option value="guest">Guest</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="eventDate">Event Date</label>
+                <input id="eventDate" name="eventDate" type="date" required />
+            </div>
+            <div class="field full">
+                <label for="studentID">Student I#</label>
+                <input id="studentID" name="studentID" type="text">
+            </div>
+            <button class="full" type="submit">Create Ticket</button>
+        </form>
 
     </main>
 </body>
