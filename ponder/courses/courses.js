@@ -19,18 +19,6 @@ const aCourse = {
   };
 
 
-// console.log(aCourse.code);
-
-// aCourse.code = 'WDD131';
-
-// console.log(aCourse.code);
-
-// document.querySelector('#courseName').textContent = aCourse.name;
-// document.querySelector('#courseCode').textContent = aCourse.code;
-
-// console.log(aCourse.sections[0].roomNum);
-
-
 function sectionTemplate(section) {
     return `<tr>
       <td>${section.sectionNum}</td>
