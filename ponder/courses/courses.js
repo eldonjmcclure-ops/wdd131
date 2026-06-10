@@ -18,8 +18,8 @@ const aCourse = {
       }
   };
 
-// document.querySelector('#courseName') = aCourse.name;
-// document.querySelector('#courseCode') = aCourse.code;
+document.querySelector('#courseName').textContent = aCourse.name;
+document.querySelector('#courseCode').textContent = aCourse.code;
 
 document.querySelector('img').src = aCourse.logo;
 document.querySelector('img').setAttribute('alt', aCourse.name);
