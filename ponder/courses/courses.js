@@ -18,6 +18,14 @@ const aCourse = {
       }
   };
 
+// document.querySelector('#courseName') = aCourse.name;
+// document.querySelector('#courseCode') = aCourse.code;
+
+document.querySelector('img').src = aCourse.logo;
+document.querySelector('img').setAttribute('alt', aCourse.name);
+document.querySelector('img').style.width = '100px';
+
+
 
 function sectionTemplate(section) {
     return `<tr>
