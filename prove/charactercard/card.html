@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Card</title>
+    <link rel="stylesheet" href="card.css">
+    <script src="card.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <img class="image" src="croc-character.webp" alt="Humanoid Crocodile">
+            <section class="name">
+                <h2 aria-label="Name">Snortleblat</h2>
+            </section>
+            <section class="stats">
+                <h3>
+                    Creature: <span class="creature-type" aria-label="Creature Type">Swamp Beast</span>
+                </h3>
+                <h3>
+                    Level: <span class="level" aria-label="Level">5</span>
+                </h3>
+                <h3>
+                    Health: <span class="health" aria-label="Health">100</span>
+                </h3>
+                <div class="buttons">
+                    <button id="attacked" aria-label="Attacked">Attacked</button>
+                    <button id="level-up" aria-label="Level Up">Level Up</button>
+                </div>
+                <div id="death-message"></div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

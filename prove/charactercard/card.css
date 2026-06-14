@@ -3,6 +3,14 @@
     background: #f0f4f8;
   }
 
+  h3 {
+    color: white;
+  }
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .card {
     background: #313131;
     border-radius: 15px;
@@ -17,11 +25,11 @@
     }
 
   .name {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
-    margin: -4px 0 20px 0;
+    margin: -4.7px 0 15px 0;
     color: white;
-    padding: 15px 0 15px 35px;
+    padding: 5px 0 5px 35px;
     background-color: #5d747b;
   }
 
@@ -53,4 +61,11 @@
 
   button:hover {
     background-color: #58605a;
-  }            
+  }
+  
+  #death-message {
+    color: white;
+    padding-bottom: 15px;
+    font-size: 2em;
+    text-align: center;
+  }
