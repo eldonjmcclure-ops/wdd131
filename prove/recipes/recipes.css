@@ -1,0 +1,145 @@
+/* .amatic-sc-regular {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5em;
+    align-self: flex-end;
+    margin-bottom: 0px;
+}
+
+header {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+#logo {
+    max-width: 150px;
+    margin-top: 40px;
+}
+
+#recipe-box {
+    max-width: auto;
+}
+#search-bar {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 8px;
+    justify-content: space-between;
+    margin: auto 20px 30px 20px
+}
+#search-icon {
+    max-width: 30px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-left: 2px solid grey;
+}
+
+h2 {
+    margin-left: 10px;
+    color: grey;
+    margin: 10px 0px 10px 20px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5em;
+    align-self: flex-end;
+    margin-bottom: 0px;
+    color: rgb(0, 163, 212);
+    margin-top: 10px;
+}
+
+#recipe {
+    border: 2px solid black;
+    padding: 10px;
+    margin: auto 20px 10px 20px;
+    border-radius: 8px;
+}
+
+#recipe p {
+    display: none;
+}
+
+#apple-crisp {
+    width: 100%
+}
+
+#dessert {
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.rating {
+    margin-bottom: 10px;
+}
+
+.icon img {
+    width: 50px;
+}
+.icon-star-empty {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.icon-star {
+    font-size: 2em;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    margin: 20px auto;
+    
+}
+
+@media (min-width: 700px) {
+    
+    header {
+        font-size: 1.5em;
+    }
+
+    #recipe {
+        display: flex;
+    }
+
+    #apple-crisp {
+        max-width: 40%;
+        margin: 10px 5px 5px 5px;
+    }
+    #recipe p {
+        display: flex;
+        font-size: 1.5em;
+    }
+    #details {
+        margin-left: 20px;
+    }
+    #dessert {
+        margin-top: 10px;
+    }
+
+    footer {
+        flex-direction: row-reverse;
+        width: 95%;
+        justify-content: space-between;
+    }
+
+
+}
