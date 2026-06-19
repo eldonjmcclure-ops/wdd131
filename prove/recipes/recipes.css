@@ -21,6 +21,7 @@ header {
 
 #logo {
     max-width: 150px;
+    max-height: 170px;
     margin-top: 40px;
 }
 
@@ -35,7 +36,7 @@ header {
     margin: auto 20px 30px 20px
 }
 #search-icon {
-    max-width: 30px;
+    width: 30px;
     padding: 5px 10px 5px 10px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -73,7 +74,7 @@ h3 {
 }
 
 #apple-crisp {
-    width: 100%
+    max-width: 100%
 }
 
 #dessert {
