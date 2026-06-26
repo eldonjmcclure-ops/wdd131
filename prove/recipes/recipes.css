@@ -25,9 +25,6 @@ header {
     margin-top: 40px;
 }
 
-#recipe-box {
-    max-width: auto;
-}
 #search-bar {
     display: flex;
     border: 2px solid black;
@@ -35,23 +32,43 @@ header {
     justify-content: space-between;
     margin: auto 20px 30px 20px
 }
+
+#search {
+    display: flex;
+    width: 100%;
+}
+
+#search-button {
+    background-color: white;
+    border: none;
+    padding-right: 0px;
+    margin-right: 5px;
+}
+
 #search-icon {
     width: 30px;
     padding: 5px 10px 5px 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-right: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
     border-left: 2px solid grey;
 }
 
-h2 {
-    margin-left: 10px;
+input {
+    border: none; 
+    margin-left: 5px;
+    
+    font-size: 1.5em;
+}
+
+input::placeholder {
     color: grey;
-    margin: 10px 0px 10px 20px;
+    margin-left: 10px;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h3 {
+h2 {
     font-family: "Amatic SC", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -59,26 +76,30 @@ h3 {
     align-self: flex-end;
     margin-bottom: 0px;
     color: rgb(0, 163, 212);
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
-#recipe {
+#recipe-container {
     border: 2px solid black;
     padding: 10px;
     margin: auto 20px 10px 20px;
     border-radius: 8px;
 }
 
-#recipe p {
+#recipe-container p {
     display: none;
 }
 
-#apple-crisp {
+#recipe-img {
     max-width: 100%
 }
 
-#dessert {
+.recipe-tags {
     padding: 5px;
+}
+
+.tag {
+    width: auto;
     font-size: 1.5em;
 }
 
@@ -114,26 +135,41 @@ footer {
 
 @media (min-width: 700px) {
     
+    #search-bar {
+        width: 60%;
+    }
     header {
         font-size: 1.5em;
     }
-
-    #recipe {
+    
+    #recipe-box {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    #apple-crisp {
+    #recipe-display {
+        margin-left: 300px;
+    }
+
+    #recipe-container {
+        display: flex;
+        width: 72%;
+    }
+
+    #recipe-img {
         max-width: 40%;
         margin: 10px 5px 5px 5px;
     }
-    #recipe p {
+    #recipe-container p {
         display: flex;
         font-size: 1.5em;
     }
     #details {
         margin-left: 20px;
+        
     }
-    #dessert {
+    .recipe-tags {
         margin-top: 10px;
     }
 
