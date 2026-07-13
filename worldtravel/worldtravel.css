@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Merriweather");
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #274060;
+  --secondary-color: #65afff;
+  --accent1-color: #335c81;
+  --accent2-color: #1b2845;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Merriweather";
+  --paragraph-font: Arial, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+}
+
+#search-bar {
+    display: flex;
+    border: none;
+    border-radius: 8px;
+    justify-content: space-between;
+    width: min(900px, 75%);
+    margin: 0 auto 30px;
+    background-color: white;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+#search {
+    display: flex;
+    width: 100%;
+    margin-left: 2px;
+    border: none;
+}
+
+#search-button {
+    background-color: white;
+    border: none;
+    padding-right: 0px;
+    margin-right: 5px;
+}
+
+#search-icon {
+    width: 30px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-left: 2px solid grey;
+}
+#logo {
+    height: 400px;
+}
+
+body {
+    background-color: var(--accent1-color);
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    border: 2px solid black;
+    
+}
+
+#travel-display{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.place-container{
+    display:block;
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-bottom: 15px;
+    background-color: var(--secondary-color);
+    box-shadow: 5px 5px 5px;
+}
+
+.place-container p{
+    display: none;
+}
+
+.place-img {
+    max-width: 100%;
+}
+
+.place-tags {
+    padding: 5px;
+}
+
+.modal-button {
+    padding: 5px;
+    font-size: 1.2em;
+
+}
+
+.tag {
+    width: auto;
+    font-size: 1.2em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+    height: 40px;
+    width: 40px;
+}
+
+@media (min-width: 800px) {
+    .place-container{
+        display: flex;
+    }
+
+    .place-details{
+        margin-left: 15px;
+    }
+    h2{
+        font-size: 3em;
+    }
+    .place-img {
+        width: 50%;
+    }
+}

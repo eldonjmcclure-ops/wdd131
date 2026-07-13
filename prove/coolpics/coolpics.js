@@ -17,7 +17,8 @@ gallery.addEventListener('click', openModal);
 
 function openModal(e) {
     
-// Code to show modal  - Use event parameter 'e'   
+// Code to show modal  - Use automatically generated 
+// event parameter 'e'   
     console.log(e.target);
 
     const img = e.target;

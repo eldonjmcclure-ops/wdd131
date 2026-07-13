@@ -3,23 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="worldtravel.css">
+    <script src="worldtravel.js" defer></script>
     <title>World Travel Site</title>
 </head>
 <body>
     <header>
-        <img src="images/site-logo.png" alt="Globe logo with a plane flying in front of it, with the words 'World Traveler ' in front of that.">
+        <img id="logo" src="images/site-logo.png" alt="Globe logo with a plane flying in front of it, with the words 'World Traveler ' in front of that.">
         <nav id="nav-bar">
-            <div id="search-bar">
-                <input id="search" type="text" placeholder="Find a Recipe">
-                <button id="search-button"><img id="search-icon" src="images/search_icon.svg" alt="Magnifying glass icon"></button>
-            </div>
+            
         </nav>
     </header>
     <main>
-        
+        <div id="search-bar">
+            <!-- <label for="tags">Search by tag:</label>
+            
+            <select name="tags" id="tags">
+
+            </select> -->
+
+            <input id="search" type="text" placeholder="Explore!">
+            <button id="search-button"><img id="search-icon" src="images/search_icon.svg" alt="Magnifying glass icon"></button>
+        </div>
+        <section id="travel-display">
+
+        </section>
     </main>
     <footer>
 
     </footer>
+    <dialog>
+        <div id="modal-details">
+            <img id="map-img">
+            <p id="description"></p>
+            <link id="wiki-link">
+        </div>
+        <button class="close-viewer">X</button>
+
+    </dialog>
 </body>
 </html>
