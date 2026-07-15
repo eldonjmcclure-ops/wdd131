@@ -43,6 +43,7 @@
     width: 100%;
     margin-left: 2px;
     border: none;
+    font-size: 1.2em;
 }
 
 #search-button {
@@ -104,12 +105,13 @@ header {
 
 .place-tags {
     padding: 5px;
+    margin-top: 10px;
 }
 
 .modal-button {
     padding: 5px;
     font-size: 1.2em;
-
+    justify-self: end;
 }
 
 .tag {
@@ -125,10 +127,42 @@ dialog {
     background-color: rgba(0,0,0,.75);
 }
 
+#modal-details{
+    background-color: var(--accent1-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#modal-name {
+    justify-self: end;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 1.7em;;
+}
+
+/* #modal-tags{
+    display: flex;
+    max-height: 40px;
+} */
+
+#map-img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+#wiki-link {
+    
+    border: 2px solid black;
+    background-color: white;
+    padding: 2px;
+    text-decoration: none;
+}
+
 .close-viewer {
     position: absolute;
-    top: 10vh;
-    right: 2vh;
+    top: 4vh;
+    right: 3vh;
     padding: 3px 6px;
     font-size: 1.5em;
     height: 40px;
@@ -138,6 +172,7 @@ dialog {
 @media (min-width: 800px) {
     .place-container{
         display: flex;
+        max-width: 60%;
     }
 
     .place-details{
