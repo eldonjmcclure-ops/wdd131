@@ -26,6 +26,13 @@
   --nav-hover-background-color: var(--primary-color);
 }
 
+h2 {
+    font-family: var(--heading-font);
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #search-bar {
     display: flex;
     border: none;
