@@ -36,6 +36,7 @@
     background-color: white;
     margin-top: 10px;
     padding-left: 10px;
+    box-shadow: 5px 5px 5px;
 }
 
 #search {
@@ -75,6 +76,7 @@ header {
     background-color: var(--secondary-color);
     border: 2px solid black;
     
+    
 }
 
 #travel-display{
@@ -86,13 +88,14 @@ header {
 .place-container{
     display:block;
     border: 2px solid black;
-    padding: 10px;
+    padding: 10px 5px 10px 15px;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
     margin-bottom: 15px;
     background-color: var(--secondary-color);
     box-shadow: 5px 5px 5px;
+    padding-right: 20px;
 }
 
 .place-container p{
@@ -101,6 +104,8 @@ header {
 
 .place-img {
     max-width: 100%;
+    border: 3px solid black;
+    margin-right: 3px;
 }
 
 .place-tags {
@@ -133,40 +138,66 @@ dialog {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 15%;
+    height: 100%
 }
 #modal-name {
     justify-self: end;
     padding-top: 20px;
-    padding-left: 20px;
-    font-size: 1.7em;;
+    padding-bottom: 20px;
+    font-size: 1.7em;
+    background-color: var(--secondary-color);
+    border: 2px solid black;
+    text-align: center;
+    max-width: 70%;
 }
 
-/* #modal-tags{
+#head-tags {
+    margin-right: 10%;
+    margin-left: 50px;
+}
+
+#modal-top {
     display: flex;
-    max-height: 40px;
-} */
+    flex-direction: row;
+}
+
+#modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 
 #map-img {
     max-width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
     margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+#description {
+    font-size: 1.3em;
+    background-color: var(--secondary-color);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px;
 }
 
 #wiki-link {
-    
-    border: 2px solid black;
-    background-color: white;
-    padding: 2px;
     text-decoration: none;
 }
 
 .close-viewer {
     position: absolute;
-    top: 4vh;
+    top: 18vh;
     right: 3vh;
     padding: 3px 6px;
     font-size: 1.5em;
     height: 40px;
     width: 40px;
+
 }
 
 @media (min-width: 800px) {
@@ -182,6 +213,62 @@ dialog {
         font-size: 3em;
     }
     .place-img {
-        width: 50%;
+        max-width: 500px;
+    }
+
+
+    /* Modal */
+
+    #modal-top{
+        display: grid;
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+    #map-img {
+        grid-row: 1 / 3;
+    }
+
+    #modal-details {
+        max-width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        height: 80%;
+        padding-bottom: 30px;
+    }
+
+    dialog {
+        justify-content: center;
+        height: 100%;
+    }
+
+    #head-tags {
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        margin-top: 20px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    #modal-name {
+        height: 50px;
+        width: 300px;
+        margin-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #modal-tags{
+        height: 30px;
+        width: 350px;
+        margin-left: 20px;
+    }
+    #description {
+        grid-column: 2 / 4;
+        grid-row: 2 / 4;
+        height: 80%;
+    }
+    .close-viewer {
+        top: 34vh;
+        right: 33vh;
     }
 }
